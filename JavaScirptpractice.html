@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let phrases = [
+            "What suup.",
+            "I'm deAd.",
+            "And I'm Hungary",
+            "Stranger-DANGER"
+        ]
+        let randomNumber = Math.floor(Math.random()*phrases.length) ;
+      alert(phrases [randomNumber]);
+
+
+          function getname()  {
+            let greetbox = document.getElementById("greeting");
+            let newName = prompt("What is your name?")
+          greetbox.innerHTML = "Hello;" + newName;
+          }
+    </script>
+</head>
+<body>
+ <h1 id="greeting" onclick="getname()">Hello, person!</h1>
+</body>
+</html>
